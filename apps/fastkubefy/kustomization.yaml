@@ -4,10 +4,10 @@ kind: Kustomization
 namespace: fastkubefy
 
 resources:
-  - deployment.yaml
-  - service.yaml
+- deployment.yaml
+- service.yaml
 
 images:
-  - name: app
-    newName: ghcr.io/jcpurger/fastkubefy
-    newTag: 0.0.1
+- name: app
+  newName: ghcr.io/jcpurger/fastkubefy
+  newTag: 0.0.5
