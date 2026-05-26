@@ -18,6 +18,8 @@ spec:
         runAsNonRoot: true
         seccompProfile:
           type: RuntimeDefault
+      imagePullSecrets:
+        - name: ghcr-pull     
       containers:
         - name: app
           image: app
